@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Exército Brasileiro",
+  "version": "1.0",
+  "description": "Exército Brasileiro",
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://ofc.exbrhabbo.com/*"
+  ],
+  "action": {
+    "default_icon": "avatarimage.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "modules/*.js"
+      ],
+      "matches": [
+        "https://ofc.exbrhabbo.com/*"
+      ]
+    }
+  ]
+}
